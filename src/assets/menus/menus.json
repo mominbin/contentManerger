@@ -1,0 +1,33 @@
+{
+  "topMenus": [
+    { "id": 1, "key": "Video Handle", "label": "Video Handle", "children": [] },
+    { "id": 2, "key": "File Handle", "label": "File Handle", "children": [] }
+  ],
+  "sideMenus": [
+    {
+      "id": 1,
+      "key": "菜单1-1",
+      "label": "菜单1-1",
+      "routTo": "content",
+      "children": [],
+      "parentId": 1
+    },
+    {
+      "id": 2,
+      "key": "菜单1-2",
+      "label": "菜单1-2",
+      "routTo": "table",
+      "children": [],
+      "parentId": 1
+    },
+    {
+      "id": 3,
+      "key": "RenameFile",
+      "label": "Rename File",
+      "routTo": "fileHandle",
+      "params": "test",
+      "children": [],
+      "parentId": 2
+    }
+  ]
+}

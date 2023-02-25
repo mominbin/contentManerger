@@ -1,0 +1,40 @@
+# IDE files
+.vscode/
+.idea/
+*.iml
+
+# Build artifacts
+dist/
+node_modules/
+tmp/
+coverage/
+*.log
+*.pid
+*.npminstall
+.angular/
+# Dependencies installed with npm
+node_modules/
+package-lock.json
+
+# Compiled output from TypeScript
+*.js
+*.js.map
+
+# Cache and log files from the Angular CLI
+node_modules/
+*.ngfactory.ts
+*.ngfactory.js
+*.ngsummary.json
+*.ngstyle.ts
+*.ngstyle.js
+$ ngsw*
+*.js.map
+
+# Environment configuration files
+src/environments/*.ts
+src/environments/*.js
+
+# Miscellaneous files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

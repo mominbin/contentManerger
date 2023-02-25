@@ -1,0 +1,8 @@
+{
+    "preset": "jest-preset-angular",
+    "setupFilesAfterEnv": ["<rootDir>/jest.base.setup.ts"],
+    "clearMocks": true,
+    "coverageDirectory": "coverage",
+    "coverageProvider": "v8",
+    "reporters": ["default"]
+}

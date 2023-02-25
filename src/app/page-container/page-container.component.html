@@ -1,0 +1,13 @@
+<app-top-navigation [menus]="topMenus"
+  (topMenuClicked)="onClickTopMenu($event)"></app-top-navigation>
+<div class="container-fluid">
+  <div class="row py-1">
+    <div class="col-md-2 no-left-padding">
+      <app-side-navigation [menus]="leftMenus"
+        (topMenuClicked)="onClickTopMenu($event)"></app-side-navigation>
+    </div>
+    <div class="col-md-10">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

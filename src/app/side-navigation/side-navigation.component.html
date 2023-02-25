@@ -1,0 +1,17 @@
+<div class="sidebar menu-bg-primary">
+  <nav class="navbar navbar-expand-lg navbar-dark menu-bg-primary">
+    <div class="container-fluid">
+      <div class="collapse show navbar-collapse"
+        id="navbarNav">
+        <ul class="navbar-nav flex-column justify-content-center">
+          <li class="nav-item menu"
+            *ngFor="let menu of menus">
+            <a class="nav-link"
+              [class.active]="clickedId === menu.id"
+              (click)="goToDetail(menu)">{{ menu.label }}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
