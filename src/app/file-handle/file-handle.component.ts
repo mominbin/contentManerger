@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
+import { CmComponentEnum } from 'src/enumeration/mat.enum';
 
 @Component({
   selector: 'app-file-handle',
@@ -8,6 +9,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 })
 export class FileHandleComponent implements OnInit {
   param: string;
+  config = { type: CmComponentEnum.Input };
   constructor(public route: ActivatedRoute) {}
 
   ngOnInit() {

@@ -1,21 +1,22 @@
-<header class="navbar navbar-expand-md navbar-dark bd-navbar"
-  style="background-color: #7952b3;">
-
-  <nav class="navbar navbar-expand-lg navbar-dark menu-bg-primary">
+<header
+  class="navbar navbar-expand-md navbar-dark bd-navbar"
+  style="background-color: #7952b3"
+>
+  <nav class="navbar navbar-expand-lg navbar-dark menu-bg-primary nav-fill">
     <div class="container-fluid">
-      <div class="collapse show navbar-collapse"
-        id="navbarSupportedContent">
-        <h1 class="navbar-brand">{{title}}</h1>
-        <ul class="navbar-nav justify-content-center">
-          <li class="nav-item menu"
-            *ngFor="let menu of menus">
-            <a class="nav-link "
+      <div class="collapse show navbar-collapse" id="navbarSupportedContent">
+        <h1 class="navbar-brand">{{ title }}</h1>
+        <ul class="navbar-nav justify-content-center nav-fill">
+          <li class="nav-item menu" *ngFor="let menu of menus">
+            <a
+              class="nav-link"
               [class.active]="clickedId === menu.id"
-              (click)="onClickTopMenu(menu.id)">{{ menu.label }}</a>
+              (click)="onClickTopMenu(menu.id)"
+              >{{ menu.label }}</a
+            >
           </li>
         </ul>
       </div>
     </div>
   </nav>
-
 </header>

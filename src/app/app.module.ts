@@ -10,6 +10,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { TableComponent } from './table/table.component';
 import { FileHandleComponent } from './file-handle/file-handle.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { MaterialModule } from './MaterialModule ';
+import { PresenterComponent } from './presenter/presenter.component';
 
 @NgModule({
   declarations: [
@@ -21,8 +23,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     TableComponent,
     PageContainerComponent,
     PageNotFoundComponent,
+    PresenterComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, MaterialModule],
   providers: [],
   bootstrap: [AppComponent],
 })

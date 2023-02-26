@@ -1,7 +1,12 @@
+$bg-color: #7952b3;
 .menu {
   cursor: pointer;
 }
 
 .menu-bg-primary {
-  background-color: #7952b3;
+  background-color: $bg-color;
+}
+
+.nav-pills .nav-link.active {
+  background-color: $bg-color;
 }
