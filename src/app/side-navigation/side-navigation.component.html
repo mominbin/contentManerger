@@ -4,7 +4,7 @@
       <ul class="nav flex-column nav-pills">
         <li class="nav-item menu" *ngFor="let menu of menus">
           <a
-            class="nav-link"
+            class="nav-link menu"
             [class.active]="clickedId === menu.id"
             (click)="goToDetail(menu)"
             >{{ menu.label }}</a

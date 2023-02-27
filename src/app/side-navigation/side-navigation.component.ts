@@ -8,7 +8,7 @@ import { SideMenu } from 'src/interfaces/menu';
   styleUrls: ['./side-navigation.component.scss'],
 })
 export class SideNavigationComponent implements OnChanges {
-  clickedId = 1;
+  clickedId: number;
   @Input() menus: SideMenu[];
 
   constructor(private router: Router) {}
@@ -16,6 +16,7 @@ export class SideNavigationComponent implements OnChanges {
   ngOnChanges(changes: SimpleChanges) {
     if (changes.menus.currentValue.length === 0) return;
     this.clickedId = changes.menus.currentValue[0].id;
+    this.goToDetail(this.menus[0]);
   }
 
   goToDetail(menu: SideMenu) {
